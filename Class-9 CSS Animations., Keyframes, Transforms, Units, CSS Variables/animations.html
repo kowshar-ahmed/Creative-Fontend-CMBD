@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    .box {
+      width: 340px;
+      height: 340px;
+      background-color: aquamarine;
+      background-image: url(https://images.unsplash.com/photo-1714139797690-969497e4a65e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-size: cover;
+      /* animation: changePosition 3s ease 3; */
+      animation: move 5s linear infinite alternate-reverse;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    body {
+      animation: colorChange 4s ease-in 2s 5 alternate;
+    }
+
+    @keyframes colorChange {
+      0% {
+        background-color: blue;
+      }
+
+      40% {
+        background-color: aqua;
+      }
+
+      60% {
+        background-color: rgb(0, 255, 81);
+      }
+
+      90% {
+        background-color: palevioletred;
+      }
+
+      100% {
+        background-color: aquamarine;
+      }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateX(0);
+
+      }
+
+      30% {
+        transform: translateX(600px);
+      }
+
+      60% {
+        transform: translateX(600px) translateY(300px);
+      }
+
+      80% {
+        transform: translateX(0) translateY(300px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+
+    }
+
+    @keyframes changePosition {
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: rotateY(90deg);
+      }
+    }
+  </style>
+  <section class="container">
+    <div class="box"></div>
+  </section>
+</body>
+
+</html>

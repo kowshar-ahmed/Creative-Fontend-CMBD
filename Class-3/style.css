@@ -1,0 +1,81 @@
+<style>
+  body {
+    background-color: #ffffff;
+    color: black;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  header {
+    /* border: 5px solid blue;
+    border-radius: 50px;
+    margin: 20px 10px;
+    padding: 10px; */
+    /* margin: 20px 100px; */
+    /* (top bottom) - (left right) */
+    /* margin: 10px 20px 30px 40px; */
+    /* top right bottom left  */
+
+    /* do any element middle 
+    width: 600px;
+    margin: 20px auto; */
+  }
+
+  header {
+    text-align: center;
+    background: #326155;
+    padding: 50px 0;
+
+  }
+
+  header h1 {
+    color: #ffffff;
+    font-size: 48px;
+    margin-top: 37px;
+    text-transform: capitalize;
+  }
+
+  .blog-post-section {
+    padding: 50px 0;
+  }
+
+  .blog-post {
+    background-color: #D7F2EC;
+    width: 583px;
+    margin: auto;
+    padding: 42px;
+  }
+
+  .blog-post h2 {
+    font-size: 36px;
+    margin-top: 36px;
+    margin-bottom: 19px;
+    color: #326155;
+  }
+
+  .blog-post p {
+    font-size: 16px;
+    margin-top: 26px;
+
+  }
+
+  .blog-post img {
+    width: 100%;
+  }
+
+  .blog-post button {
+    background-color: #326155;
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  footer {
+    background-color: #326155;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+  }
+</style>

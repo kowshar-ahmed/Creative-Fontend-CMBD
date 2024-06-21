@@ -1,0 +1,18 @@
+<style>
+  h1 {
+    color: red;
+    background-color: green;
+    font-size: 30px;
+  }
+
+  .ko {
+    color: rgb(252, 125, 15);
+    background-color: gray;
+    font-size: 30px;
+  }
+  #ko {
+        color: rgb(45, 199, 6);
+    background-color: rgb(171, 209, 0);
+    font-size: 30px;
+  }
+</style>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <h2>HTML Forms</h2>
+  <form action="">
+    <!-- Box -->
+    <fieldset>
+      <legend style="color: blue;">User Registration</legend>
+      <!-- Name -->
+      <label for="firstName">First Name</label>
+      <span style="color: red;">*</span>
+      <input id="firstName" type="text" placeholder="Enter Your Name" required>
+
+      <br><br>
+
+      <!-- Email -->
+      <label for="mail">Your Mail</label>
+      <span style="color: red;">*</span>
+      <input id="mail" type="email" placeholder="kowshar@gmail.com" required>
+
+      <br><br>
+
+      <!-- Phone -->
+      <label for="phone">Your Phone</label>
+      <input id="phone" type="number" placeholder="+8801724130266">
+
+      <br><br>
+
+      <!-- Password -->
+      <label for="pass">Your Password</label>
+      <input id="pass" type="password">
+
+      <br><br>
+      <!-- Dropdpwn -->
+      <label for="country">Chose Country</label>
+      <select name="" id="country">
+        <option value="">Select Your Country</option>
+        <option value="bangladesh">Bangladesh</option>
+        <option value="pakistan">pakistan</option>
+        <option value="nepal">nepal</option>
+        <option value="india">india</option>
+      </select>
+
+      <br><br>
+
+      <!-- Radio Gender -->
+      <label for="gender">Gender</label>
+      <br>
+      <input type="radio" name="gender" id="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="other">
+      <label for="other">Other</label>
+
+      <br><br>
+      <!-- Date of birth -->
+      <label for="birth">Date of birth</label>
+      <br>
+      <input type="date" id="birth">
+
+      <!-- Upload Files  -->
+
+      <br><br>
+      <label for="upload">Upload Image</label>
+      <input type="file" accept="image/*" multiple>
+
+      <br><br>
+
+      <!-- Comment -->
+      <label for="comment">Your Message</label>
+      <br>
+      <textarea id="comment" cols="50" rows="10" placeholder="Hi.."></textarea>
+
+      <br><br>
+      <input type="checkbox" id="terms" required>
+      <label for="terms"> Agree to terms and conditions</label>
+      <span style="color: red;">*</span>
+
+      <br>
+      <input type="color" name="" id="">
+
+      <br><br>
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Form">
+      <input type="reset">
+
+    </fieldset>
+  </form>
+</body>
+
+</html>

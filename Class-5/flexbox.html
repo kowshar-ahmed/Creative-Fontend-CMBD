@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+</head>
+<style>
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: wheat;
+  }
+
+  .flex-container {
+    border: 2px solid yellowgreen;
+    max-width: 700px;
+    margin: 120px auto;
+    height: 400px;
+
+    /* content ke pasha pashi korte */
+    /* ata dilei baki sob kaj korbe */
+    display: flex;
+    /* uporer ta dile ati auto thake.  */
+    /* flex-direction: row; */
+    /* box guloke center ba right e ante. */
+    /* right to left e kaj kore. */
+    /* justify-content: center; */
+    justify-content: center;
+    /* gap: 20px; */
+    /* space sato dike soman vabe vag hobe */
+    justify-content: space-around;
+    /* top to bottom e kaj kore */
+    align-items: center;
+    /* responsive korte */
+    flex-wrap: wrap;
+
+
+  }
+
+  .flex-item {
+    width: 120px;
+    height: 120px;
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex-shrink: 0; */
+    /* width ar moto  */
+    /* flex-basis: 400px; */
+  }
+
+  .item-2 {
+    background-color: aqua;
+    /* flex-grow: 2; */
+    /* box gulo age ba pore korte */
+    /* order: 1; */
+    /* align-self: center; */
+
+  }
+
+  .item-3 {
+    background-color: blue;
+    /* flex-grow: 3; */
+  }
+</style>
+
+<body>
+  <section class="flex-container">
+    <div class="flex-item">Box -1</div>
+    <div class="flex-item item-2">Box -2</div>
+    <div class="flex-item item-3">Box -3</div>
+
+  </section>
+</body>
+
+</html>
